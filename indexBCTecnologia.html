@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación Nestor Santos - Analista de BI para BC Tecnología</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --primary-color: #012340; /* Azul Oscuro Principal BC */
+            --secondary-color: #F23827; /* Rojo BC (Acento) */
+            --accent-color-darker-blue: #022859; /* Azul Oscuro Alternativo BC */
+            --bg-color: #F2F2F2; /* Gris Muy Claro BC (Fondo) */
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            
+            --text-color: #012340; /* Azul Oscuro para texto principal */
+            --light-text-color: #4a5568; /* Un gris más oscuro para mejor contraste sobre F2F2F2 */
+            --header-text-color: #F2F2F2; /* Texto claro para fondos oscuros */
+
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            --highlight-bg-color: rgba(242, 56, 39, 0.1); /* Rojo BC muy claro para resaltar */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background-color: var(--primary-color); /* Azul Oscuro BC para el header */
+            color: var(--header-text-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        header img.profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--header-text-color);
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
+            font-weight: 400;
+            color: var(--secondary-color); /* Rojo BC para el subtítulo del header */
+            margin-top: 0;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            box-shadow: var(--hover-shadow);
+        }
+
+        .section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            color: var(--secondary-color); /* Rojo BC para títulos de sección */
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color); /* Borde inferior Rojo BC */
+            display: inline-block;
+        }
+
+        .section p, .section ul li {
+            font-size: 1.05em;
+            color: var(--light-text-color);
+            margin-bottom: 1em;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section strong {
+            font-weight: 600;
+            color: var(--primary-color); /* Texto fuerte en Azul Oscuro BC */
+        }
+
+        .highlight {
+            background-color: var(--highlight-bg-color); /* Rojo BC muy claro para resaltar */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+            color: var(--secondary-color); /* Texto del highlight en rojo para consistencia */
+        }
+
+        .dashboard-showcase {
+            text-align: center;
+        }
+
+        .dashboard-showcase img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid var(--border-color);
+            border-radius: 8px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-showcase img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(242, 56, 39, 0.3); /* Sombra con tono Rojo BC */
+        }
+
+        .dashboard-caption {
+            font-size: 0.95em;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color); /* Botón Rojo BC */
+            color: white; /* Texto blanco para contraste con rojo */
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            margin: 5px; /* Espacio entre botones */
+        }
+
+        .cta-button:hover {
+            background-color: #D92B1A; /* Un rojo un poco más oscuro para hover */
+            transform: translateY(-2px);
+        }
+        
+        .company-info {
+            background-color: #fdfdfb; 
+            border-left: 5px solid var(--primary-color); /* Borde lateral Azul Oscuro BC */
+        }
+        .company-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--secondary-color); /* Título interno en Rojo BC */
+            font-size: 1.3em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            border-top: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            header h2 {
+                font-size: 1.2em;
+            }
+            .section h3 {
+                font-size: 1.5em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            header img.profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+             header h1 {
+                font-size: 1.8em;
+            }
+            header h2 {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+             <a href="https://www.linkedin.com/in/ingnsantos/" target="_blank" title="Ver Perfil de Nestor Santos en LinkedIn">
+                <img src="https://www.dropbox.com/scl/fi/ssmwr3w27v0e50tdzicgm/ProfileV01.jpg?rlkey=6rio5ubg2k4o0kqqwux8ug2dp&dl=1" alt="Foto de Perfil Nestor Santos" class="profile-pic">
+            </a>
+            <h1>Nestor Santos</h1>
+            <h2>Analista de Inteligencia de Negocios</h2>
+        </header>
+
+        <div class="section" id="introduction">
+            <h3>Mi Propuesta de Valor para BC Tecnología</h3>
+            <p>Soy un profesional del análisis de datos con <strong>más de 5 años de experiencia</strong> transformando datos complejos en insights accionables. Mi objetivo es aportar valor estratégico a BC Tecnología, contribuyendo a su misión de <span class="highlight">desarrollar soluciones de tecnología innovadoras</span> y coherentes con las prioridades de sus clientes. Busco aplicar mis habilidades para potenciar su capacidad de <span class="highlight">crear valor para las empresas que confían en sus soluciones digitales</span>, especialmente en sectores clave como banca y retail.</p>
+        </div>
+
+        <div class="section" id="analytical-skills">
+            <h3>Capacidad Analítica y Dominio Técnico para Soluciones Digitales</h3>
+            <p>Mi dominio de herramientas como <strong>Power BI, SQL, Excel Avanzado</strong>, y mi desarrollo continuo en Python para análisis de datos, son necesarias para diseñar e implementar las <span class="highlight">soluciones útiles y coherentes</span> que BC Tecnología ofrece. Puedo analizar los datos transaccionales, de comportamiento de clientes o de mercado para extraer insights que informen el desarrollo de soluciones tecnológicas efectivas para los clientes de BC Tecnología en <span class="highlight">banca y retail</span>.</p>
+            <p>Con experiencia en el desarrollo de KPIs y dashboards interactivos, puedo ayudar a BC Tecnología a visualizar el impacto de sus soluciones y a sus clientes a tomar decisiones basadas en datos, fortaleciendo el <span class="highlight">compromiso, valor y confianza</span> que los caracteriza.</p>
+        </div>
+
+        <div class="section company-info" id="company-alignment">
+            <h3>Alineación con la Filosofía de BC Tecnología</h3>
+            <p>Me identifico plenamente con la filosofía de BC Tecnología, sostenida en la <span class="highlight">innovación</span> y la <span class="highlight">motivación incesante por crear valor</span>. Su compromiso por ofrecer soluciones que respondan a las prioridades estratégicas de los clientes es un pilar fundamental en mi propia ética de trabajo.</p>
+            
+            <p>A través del análisis de datos y la inteligencia de negocios, puedo contribuir activamente a que BC Tecnología siga diferenciándose, aportando una capa analítica que enriquezca su portafolio de servicios y asegure que las <span class="highlight">soluciones digitales</span> entregadas generen un impacto medible y significativo.</p>
+
+            <p>Mis valores de <strong>integridad</strong> en el análisis, <strong>transparencia</strong> en la comunicación de resultados y una <strong>orientación a la solución</strong>, se alinean con el compromiso de BC Tecnología hacia sus clientes.</p>
+        </div>
+        
+        <div class="section" id="contribution">
+            <h3>Contribución Estratégica a BC Tecnología y sus Clientes</h3>
+            <p>Como especialista en datos en BC Tecnología, mi enfoque será:</p>
+            <ul>
+                <li>Colaborar en el diseño y desarrollo de <span class="highlight">soluciones de inteligencia de negocios y análisis de datos</span> para los clientes de BC Tecnología en sectores como banca y retail.</li>
+                <li>Analizar datos de clientes para identificar <span class="highlight">oportunidades de mejora, optimización y nuevas líneas de negocio</span> que BC Tecnología pueda abordar.</li>
+                <li>Construir dashboards y reportes que permitan a los clientes de BC Tecnología <span class="highlight">monitorear KPIs críticos</span> y evaluar el ROI de las soluciones implementadas.</li>
+                <li>Apoyar a los equipos de consultoría y desarrollo con <span class="highlight">insights basados en datos</span> para la toma de decisiones en proyectos.</li>
+                <li>Contribuir a la <span class="highlight">innovación continua</span> dentro de BC Tecnología, explorando nuevas herramientas y metodologías analíticas para enriquecer su oferta.</li>
+            </ul>
+        </div>
+
+        <div class="section dashboard-showcase" id="dashboard-example">
+            <h3>Ejemplo de Dashboard Interactivo (Aplicable a Proyectos de Consultoría)</h3>
+            <p>A continuación, una muestra de un tablero que he construido. Este tipo de visualización es fácilmente adaptable para analizar métricas de proyectos de consultoría tecnológica, o para desarrollar soluciones de BI para los clientes de BC Tecnología en banca y retail:</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNzE1MGYxMGMtMTU0MC00NGI5LWE5NTUtZTg0MmVkMjQyZDNjIiwidCI6IjZmMGJiNzJmLTUzNzctNGRkZi05MzZhLWI2YzcyYmYyMWFlMiIsImMiOjF9" target="_blank" title="Ver Tablero Interactivo en Power BI">
+                <img src="https://www.dropbox.com/scl/fi/7vqkc2gsgy3xizy0agx59/CapturaDashboard.JPG?rlkey=kzm11w5zkzinvlm5xsets3t1z&dl=1" alt="Vista previa del Tablero Power BI - Ejemplo Aplicable a Consultoría y Clientes BC Tecnología">
+            </a>
+            <p class="dashboard-caption">Haga clic en la imagen para explorar el tablero interactivo. Puede adaptarse para visualizar KPIs de proyectos, análisis de mercado para clientes, o rendimiento de soluciones digitales.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h3>Oportunidad de Colaboración</h3>
+            <p>Me entusiasma la posibilidad de discutir cómo mis habilidades en análisis de datos e inteligencia de negocios pueden complementar el talentoso equipo de BC Tecnología y contribuir a su trayectoria de éxito, aportando valor tanto a la empresa como a sus prestigiosos clientes.</p>
+            <a href="https://www.linkedin.com/in/ingnsantos/" target="_blank" class="cta-button">
+                Ver mi Perfil en LinkedIn
+            </a>
+            <a href="https://drive.google.com/file/d/1TCWStkbjscmZTLdKIdv5mP62AP_GUKyA/view?usp=drive_link" target="_blank" class="cta-button">
+                Descargar CV Actualizado
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Nestor Santos. Todos los derechos reservados.</p>
+        <p>Diseñado como parte de mi postulación para BC Tecnología.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
